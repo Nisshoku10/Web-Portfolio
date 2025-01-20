@@ -25,6 +25,8 @@
     --light-purple: #d9abff;
     --orange: #d4680e;
     --dark-gray: #222121;
+    --button-color: #111111;
+    --text-color: white;
 }
 
 *{
@@ -47,6 +49,7 @@ body{
     width: 100%;
     flex-wrap: wrap;
     position: relative;
+    z-index: 1;
 }
 
 .profile-card{
@@ -56,13 +59,13 @@ body{
     border-radius: 10px;
     min-height: 400px;
     position: relative;
-    color: #fff;
+    color: var(--text-color);
     margin: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    z-index: 1;
+    z-index: 100;
 }
 
 .profile-card .profile-pic{
@@ -148,7 +151,7 @@ body{
     border-radius: 5px;
     background-color: #111;
     text-align: center;
-    color: #fff;
+    color: var(--text-color);
     transition: 0.5s;
 }
 
@@ -192,8 +195,14 @@ body{
     background: linear-gradient(45deg, #f64c57, #e21b5a);
 }
 
+.about-me-content{
+    margin: 0;
+    padding: 10px;
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+}
 .about p{
-    color: #555;
+    color: var(--text-color);
     margin: 1.5 0;
 }
 
@@ -211,20 +220,75 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 5px;
+    flex-direction: column;
 }
 
 .about .projects-container .project{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    border: 2px solid white;
+    border: 2px solid var(--text-color);
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    background: #1d1d1d;
 }
 
 .about .projects-container .project img{
-    width: 100px;
+    width: 200px;
     height: 100%;
     border-radius: 5px;
+    transition: 0.5s;
+    margin: 10px;
+    background-color: #1d1d1d;
+}
+
+.about .projects-container .project img:hover{
+    transform: scale(1.2);
+    border: 1px solid var(--text-color);
+}
+
+.project-img-container{
+    margin: 0px;
+    padding: 10px;
+    background-color: #1d1d1d;
+}
+.project-about{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.project-about p{
+    color: var(--text-color);
+}
+
+.project-about .code-link{
+    background-color: var(--button-color);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--button-color);
+    transition: 0.5s;
+}
+
+.project-about .code-link a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.project-about .code-link a i {
+    margin-right: 10px; 
+}
+
+.project-about .code-link:hover{
+    transform: scale(1.1);
+    border: 1px solid whitesmoke;
 }

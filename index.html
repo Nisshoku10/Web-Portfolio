@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-<Compatible" content="IE=7">
     <title>Wev Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -60,16 +60,50 @@
         <div class="about">
             <h1>About me</h1>
 
-            <p> I'm a Software Developer from Las Pinas, Phillippines, working in desktop applications. I personally love to challenge myself with projects that are worth spending time and effort on.</p>
-
-            <p> My goal is to show my dedication in making desktop applications in the simplest way possible. As a third-year college student, I still have a long way to go, but I'm confident that I have the potential to bring the most out of my talents.</p>
+            <div class="about-me-content">
+                <p> I'm a Software Developer from Las Pinas, Phillippines, working in desktop applications. I personally love to challenge myself with projects that are worth spending time and effort on.</p>
+                <br>
+                <p> My goal is to show my dedication in making desktop applications in the simplest way possible. As a third-year college student, I still have a long way to go, but I'm confident that I have the potential to bring the most out of my talents.</p>
+            </div>
 
             <h2>My Previous Projects</h2>
 
             <div class="projects-container">
                 <div class="project">
-                    <img src="images/binarygame.PNG" alt="binarygame">
-                    <p>In this project, we are asked to create a game for converting decimal to binary. We needed to implement a difficulty standard to make an appealing game. Most importantly, we must have a user interface that we think is suitable for the game.</p>
+                    <div class="project-img-container">
+                        <img src="images/binarygame.PNG" alt="binarygame">
+                    </div>
+                    <div class="project-about">
+                        <p>In this project, we are asked to create a game for converting decimal to binary. We needed to implement a difficulty standard to make an appealing game. Most importantly, we must have a user interface that we think is suitable for the game.</p>
+                        <button class="code-link"><a href="https://github.com/Nisshoku10/2Y_2324_EventDriven_IntegProg_8BitBinary"><i class="fab fa-github"style="color: white"></i>Source Code</a></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img-container">
+                        <img src="images/address-book.png" alt="addressbook">
+                    </div>                    
+                    <div class="project-about">
+                        <p> As a starting project, we have been asked to create a simple address book, featuring the use of list boxes with some sorting logic behind. This was a great practice for practing list box as I was able to use it in every other project that I had.</p>
+                        <button class="code-link"><a href="https://github.com/Nisshoku10/2Y_2324_EventDriven_AddressBook"><i class="fab fa-github"style="color: white"></i>Source Code</a></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img-container">
+                        <img src="images/chase_me.png" alt="chase button">
+                    </div>                    
+                    <div class="project-about">
+                        <p>In this activity, the idea was to make the button randomized its position on the window.The goal was for the user to click the button as fast as they can. It was a great practice for manipulating margin dynamically.</p>
+                        <button class="code-link"><a href="https://github.com/Nisshoku10/ChaseMe"><i class="fab fa-github"style="color: white"></i>Source Code</a></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img-container">
+                        <img src="images/programmer-calc.png" alt="addressbook">
+                    </div>                    
+                    <div class="project-about">
+                        <p>Originally, we were asked to create a scientific calculator. However, I was given a different task, which is a programmer calculator. Unlike scientific calculator, which deals only with decimal numbers, I was dealing with the number system. It was challenging but a great project to work with.</p>
+                        <button class="code-link"><a href="https://github.com/Nisshoku10/2Y_2324_Integ1-EventDrivenProg_ProgrammerCalculatorWPF"><i class="fab fa-github"style="color: white"></i>Source Code</a></button>
+                    </div>
                 </div>
             </div>
          </div>
