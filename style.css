@@ -39,12 +39,13 @@
 
 body{
     background: linear-gradient(45deg, var(--purple), var(--purple-light));
+    padding: 5px;
 }
 
 .container{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100%;
     width: 100%;
     flex-wrap: wrap;
@@ -52,15 +53,16 @@ body{
     z-index: 1;
 }
 
-.profile-card{
+.profile-card {
     background: #111;
     width: 400px;
     padding: 3rem;
     border-radius: 10px;
     min-height: 400px;
-    position: relative;
+    position: sticky; /* Make it sticky */
+    top: 0; /* Distance from the top of the viewport */
     color: var(--text-color);
-    margin: 15px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
